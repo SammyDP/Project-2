@@ -7,7 +7,7 @@ OnlyFantasies
 <h3 align="center">
 OnlyFantasies is the perfect tool to help you dominate your fantasy sports league!
 </h3>
-
+[OnlyFantasies](https://sammydp.github.io/Project-2/)
 <p>&nbsp;</p>
 
 ### Table of Content
