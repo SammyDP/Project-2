@@ -1,6 +1,8 @@
 const router = require("express").Router();
-const dailyFantasyPlayersRoutes = require("./dailyFantasyPlayersRoutes");
+const teamRoutes = require("./teamRoutes");
+const userRoutes = require("./userRoutes");
 
-router.use("/dailyFantasyPlayers", dailyFantasyPlayersRoutes);
+router.use("/teams", teamRoutes);
+router.use("/users", userRoutes);
 
 module.exports = router;
