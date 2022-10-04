@@ -10,7 +10,7 @@ OnlyFantasies is the perfect tool to help you dominate your fantasy sports leagu
 </h3>
 <p>&nbsp;</p>
 <p align="center">
-[OnlyFantasies](https://git.heroku.com/only-fantasies.git)
+[OnlyFantasies](https://onlyfantasies.herokuapp.com/)
 </p>
 <p>&nbsp;</p>
 
