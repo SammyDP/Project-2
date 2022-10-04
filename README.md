@@ -1,3 +1,4 @@
+<img src="https://user-images.githubusercontent.com/107449948/193716238-846545c5-7c3a-4160-8b01-231372bb0509.jpg" />
 <h1 align="center">
 OnlyFantasies
 </h1>
@@ -7,7 +8,10 @@ OnlyFantasies
 <h3 align="center">
 OnlyFantasies is the perfect tool to help you dominate your fantasy sports league!
 </h3>
-[OnlyFantasies](https://sammydp.github.io/Project-2/)
+<p>&nbsp;</p>
+<p align="center">
+[OnlyFantasies](https://git.heroku.com/only-fantasies.git)
+</p>
 <p>&nbsp;</p>
 
 ### Table of Content
