@@ -10,7 +10,9 @@ OnlyFantasies is the perfect tool to help you dominate your fantasy sports leagu
 </h3>
 <p>&nbsp;</p>
 <p align="center">
+
 [OnlyFantasies](https://onlyfantasies.herokuapp.com/)
+
 </p>
 <p>&nbsp;</p>
 
@@ -37,33 +39,33 @@ OnlyFantasies is the perfect tool to help you dominate your fantasy sports leagu
 
 You and your group will use everything you’ve learned over the past six modules to create a real-world full-stack application that you’ll be able to showcase to potential employers. The user story and acceptance criteria will depend on the project that you create, but your project must fulfil the following requirements:
 
-- Use Node.js and Express.js to create a RESTful API.
+- &#9745; Use Node.js and Express.js to create a RESTful API.
 
-- Use Handlebars.js as the template engine.
+- &#9745; Use Handlebars.js as the template engine.
 
-- Use MySQL and the Sequelize ORM for the database.
+- &#9745; Use MySQL and the Sequelize ORM for the database.
 
-- Have both GET and POST routes for retrieving and adding new data.
+- &#9745; Have both GET and POST routes for retrieving and adding new data.
 
-- Use at least one new library, package, or technology that we haven’t discussed.
+- &#9746; Use at least one new library, package, or technology that we haven’t discussed.
 
-- Have a folder structure that meets the MVC paradigm.
+- &#9745; Have a folder structure that meets the MVC paradigm.
 
-- Include authentication (express-session and cookies).
+- &#9746; Include authentication (express-session and cookies).
 
-- Protect API keys and sensitive information with environment variables.
+- &#9746; Protect API keys and sensitive information with environment variables.
 
-- Be deployed using Heroku (with data).
+- &#9746; Be deployed using Heroku (with data).
 
-- Have a polished UI.
+- &#9745; Have a polished UI.
 
-- Be responsive.
+- &#9745; Be responsive.
 
-- Be interactive (i.e., accept and respond to user input).
+- &#9745; Be interactive (i.e., accept and respond to user input).
 
-- Meet good-quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, etc.).
+- &#9745; Meet good-quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, etc.).
 
-- Have a professional README (with unique name, description, technologies used, screenshot, and link to deployed application).
+- &#9745; Have a professional README (with unique name, description, technologies used, screenshot, and link to deployed application).
 
 <p>&nbsp;</p>
 
@@ -73,11 +75,14 @@ You and your group will use everything you’ve learned over the past six module
 
 # Technology
 
-<img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"> <img src="https://user-images.githubusercontent.com/107449948/182315151-08c6a8cb-9059-4929-9f23-8c04075ef5c2.png" width="128" height="24">
+<img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"> <img src="https://user-images.githubusercontent.com/107449948/182315151-08c6a8cb-9059-4929-9f23-8c04075ef5c2.png" width="128" height="24"> <img src="https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white"> <img src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB"> <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white"> <img src="https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white"> <img src="https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white"> <img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white">
 
 <p>&nbsp;</p>
 
 # Links
+
+[Heroku Deployment](https://onlyfantasies.herokuapp.com/) <br>
+[Video Demonstration]()
 
 <p>&nbsp;</p>
 
