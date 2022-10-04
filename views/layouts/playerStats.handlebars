@@ -5,10 +5,20 @@
 
 <ul class="player_list">
   {{#each player}}
-    <li>{{Name}}</li>
-    <li>{{Position}}</li>
-    <li>{{Team}}</li>
-    <li>{{LastGameFantasyPoints}}</li>
-    <li>{{ProjectedFantasyPoints}}</li>
+      <label for="Name">
+      Player Name:
+    <li>{{data.Name[0]}}</li>
+        <label for="Position">
+      Position:
+    <li>{{data.Position[0]}}</li>
+        <label for="Team">
+      Team:
+    <li>{{data.Team[0]}}</li>
+        <label for="LastGameFantasyPoints">
+      Last Game Fantasy Points:
+    <li>{{data.LastGameFantasyPoints[0]}}</li>
+        <label for="ProjectedFantasyPoints">
+      Projected Fantasy Points:
+    <li>{{data.ProjectedFantasyPoints[0]}}</li>
   {{/each}}
 </ul>
