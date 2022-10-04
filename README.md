@@ -1,6 +1,8 @@
 <img src="https://user-images.githubusercontent.com/107449948/193716238-846545c5-7c3a-4160-8b01-231372bb0509.jpg" />
 <h1 align="center">
-OnlyFantasies
+
+[OnlyFantasies](https://onlyfantasies.herokuapp.com/)
+
 </h1>
 
 <p>&nbsp;</p>
@@ -8,12 +10,6 @@ OnlyFantasies
 <h3 align="center">
 OnlyFantasies is the perfect tool to help you dominate your fantasy sports league!
 </h3>
-<p>&nbsp;</p>
-<p align="center">
-
-[OnlyFantasies](https://onlyfantasies.herokuapp.com/)
-
-</p>
 <p>&nbsp;</p>
 
 ### Table of Content
@@ -39,33 +35,33 @@ OnlyFantasies is the perfect tool to help you dominate your fantasy sports leagu
 
 You and your group will use everything you’ve learned over the past six modules to create a real-world full-stack application that you’ll be able to showcase to potential employers. The user story and acceptance criteria will depend on the project that you create, but your project must fulfil the following requirements:
 
-- &#9745; Use Node.js and Express.js to create a RESTful API.
+- &#x2611; Use Node.js and Express.js to create a RESTful API.
 
-- &#9745; Use Handlebars.js as the template engine.
+- &#x2611; Use Handlebars.js as the template engine.
 
-- &#9745; Use MySQL and the Sequelize ORM for the database.
+- &#x2611; Use MySQL and the Sequelize ORM for the database.
 
-- &#9745; Have both GET and POST routes for retrieving and adding new data.
+- &#x2611; Have both GET and POST routes for retrieving and adding new data.
 
-- &#9746; Use at least one new library, package, or technology that we haven’t discussed.
+- &#x2612; Use at least one new library, package, or technology that we haven’t discussed.
 
-- &#9745; Have a folder structure that meets the MVC paradigm.
+- &#x2611; Have a folder structure that meets the MVC paradigm.
 
-- &#9746; Include authentication (express-session and cookies).
+- &#x2612; Include authentication (express-session and cookies).
 
-- &#9746; Protect API keys and sensitive information with environment variables.
+- &#x2612; Protect API keys and sensitive information with environment variables.
 
-- &#9746; Be deployed using Heroku (with data).
+- &#x2612; Be deployed using Heroku (with data).
 
-- &#9745; Have a polished UI.
+- &#x2611; Have a polished UI.
 
-- &#9745; Be responsive.
+- &#x2611; Be responsive.
 
-- &#9745; Be interactive (i.e., accept and respond to user input).
+- &#x2611; Be interactive (i.e., accept and respond to user input).
 
-- &#9745; Meet good-quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, etc.).
+- &#x2611; Meet good-quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, etc.).
 
-- &#9745; Have a professional README (with unique name, description, technologies used, screenshot, and link to deployed application).
+- &#x2611; Have a professional README (with unique name, description, technologies used, screenshot, and link to deployed application).
 
 <p>&nbsp;</p>
 
