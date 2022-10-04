@@ -1,5 +1,3 @@
-// This is straight from mini project 14
-
 const router = require("express").Router();
 const { User } = require("../../models");
 
