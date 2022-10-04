@@ -2,31 +2,13 @@
   <div class="player-stats-card">
 {{!-- This should be a for loop to populate cards for each player we a user has on a team.  Maybe a heading for each team a user has and then a card for each player and their weekly stats? see below--}}
 
-{{!-- <ul class="player_list">
-  {{#each player}}
-    <li>{{stat}}</li>
-    <li>{{stat}}</li>
-    <li>{{stat}}</li>
-    <li>{{stat}}</li>
-    <li>{{stat}}</li>
-  {{/each}}
-</ul> --}}
 
-    {{Player[0]}}
-  </div>
-  <div class="card-body">
-    <p>
-      Position:
-      {{Position[0]}}
-    </p>
-    <p>
-      Team:
-      {{Team[0]}}
-    </p>
-    {{#if has_nuts}}
-      <p class="has-nuts">
-        Contains Nuts
-      </p>
-    {{/if}}
-  </div>
-</div>
+<ul class="player_list">
+  {{#each player}}
+    <li>{{Name}}</li>
+    <li>{{Position}}</li>
+    <li>{{Team}}</li>
+    <li>{{LastGameFantasyPoints}}</li>
+    <li>{{ProjectedFantasyPoints}}</li>
+  {{/each}}
+</ul>
