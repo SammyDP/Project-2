@@ -53,11 +53,11 @@ You and your group will use everything you’ve learned over the past six module
 
 - &#x2612; Be deployed using Heroku (with data).
 
-- &#x2611; Have a polished UI.
+- &#x2612; Have a polished UI.
 
-- &#x2611; Be responsive.
+- &#x2612; Be responsive.
 
-- &#x2611; Be interactive (i.e., accept and respond to user input).
+- &#x2612; Be interactive (i.e., accept and respond to user input).
 
 - &#x2611; Meet good-quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, etc.).
 
