@@ -5,6 +5,10 @@ class Team extends Model {}
 
 Team.init(
   {
+    team_name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     player_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
