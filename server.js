@@ -42,7 +42,7 @@ app.engine(
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
-// app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "public")));
 
 app.use(routes);
 
@@ -55,3 +55,45 @@ app.get("/", (req, res) => {
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log("Now listening"));
 });
+
+// Fetch API data and save to database
+function projectedStats(season, week) {
+  var requestUrl = `https://api.sportsdata.io/v3/nfl/projections/json/PlayerGameProjectionStatsByWeek/${season}/${week}?key=${process.env.SPORTS_DATA_API_KEY}`;
+
+  fetch(requestUrl)
+    .then(function (response) {
+      return response.json();
+    })
+    .then((data) => {
+      const playerName = data[0].Name;
+      const playerId = data[0].PlayerID;
+      const playerTeam = data[0].Team;
+      const playerPosition = data[0].Position;
+      const LastGameFantasyPoints = data[0].FantasyPoints;
+      const ProjectedFantasyPoints = data[0].FantasyPoints;
+
+      const playerData = {
+        playerName,
+        playerId,
+        playerTeam,
+        playerPosition,
+        LastGameFantasyPoints,
+        ProjectedFantasyPoints,
+      };
+
+      console.log(playerData);
+
+      fetch("/api/players", {
+        method: "POST",
+        body: JSON.stringify(playerData),
+        headers: { "Content-Type": "application/json" },
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          console.log("Success:", data);
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+        });
+    });
+}
