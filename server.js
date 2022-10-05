@@ -1,8 +1,11 @@
 //Loads the express module
 const express = require("express");
+const session = require("express-session");
+
 //Creates our express server
 const app = express();
-const port = 3000;
+const PORT = process.env.PORT || 3000;
+const sequelize = require("./config/connection");
 
 const handlebars = require("express-handlebars");
 
@@ -25,4 +28,4 @@ app.get("/", (req, res) => {
 
   //Makes the app listen to port 3000
 });
-app.listen(port, () => console.log(`App listening to port ${port}`));
+app.listen(PORT, () => console.log(`App listening to port ${PORT}`));
