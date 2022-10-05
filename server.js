@@ -1,10 +1,31 @@
-//Loads the express module
+const path = require("path");
 const express = require("express");
-//Creates our express server
-const app = express();
-const port = 3000;
-
+const session = require("express-session");
 const handlebars = require("express-handlebars");
+const routes = require("./controllers");
+
+const sequelize = require("./config/connection");
+const SequelizeStore = require("connect-session-sequelize")(session.Store);
+
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+const sess = {
+  secret: "Super secret secret",
+  cookie: {
+    maxAge: 300000,
+    httpOnly: true,
+    secure: false,
+    sameSite: "strict",
+  },
+  resave: false,
+  saveUninitialized: true,
+  store: new SequelizeStore({
+    db: sequelize,
+  }),
+};
+
+app.use(session(sess));
 
 app.set("view engine", "hbs");
 
@@ -17,12 +38,20 @@ app.engine(
     partialsDir: `${__dirname}/views/partials`,
   })
 );
-//Serves static files (we need it to import a css file)
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
+// app.use(express.static(path.join(__dirname, "public")));
+
+app.use(routes);
+
 //Sets a basic route
 app.get("/", (req, res) => {
   res.render("main", { layout: "index" });
 
   //Makes the app listen to port 3000
 });
-app.listen(port, () => console.log(`App listening to port ${port}`));
+sequelize.sync({ force: false }).then(() => {
+  app.listen(PORT, () => console.log("Now listening"));
+});
