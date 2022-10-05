@@ -1,3 +1,21 @@
+.hero {
+  background-image: url(https://user-images.githubusercontent.com/107449948/194134275-b2c8af72-fe23-4496-a39c-19a5b8349ed1.jpg);
+  background-size: cover;
+}
+
+body {
+  background-image: url(https://user-images.githubusercontent.com/107449948/194133925-876995db-a2ae-47c3-b5cf-e33cc8fe66d9.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #999;
+}
+
+.title {
+  font-size: 50px;
+}
+
 #test {
   font-size: 60px;
 }
