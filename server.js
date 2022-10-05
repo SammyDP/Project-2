@@ -58,6 +58,8 @@ sequelize.sync({ force: false }).then(() => {
 
 // Fetch API data and save to database
 function projectedStats(season, week) {
+  let season = "2022REG";
+  let week = 5;
   var requestUrl = `https://api.sportsdata.io/v3/nfl/projections/json/PlayerGameProjectionStatsByWeek/${season}/${week}?key=${process.env.SPORTS_DATA_API_KEY}`;
 
   fetch(requestUrl)
@@ -69,16 +71,14 @@ function projectedStats(season, week) {
       const playerId = data[0].PlayerID;
       const playerTeam = data[0].Team;
       const playerPosition = data[0].Position;
-      const LastGameFantasyPoints = data[0].FantasyPoints;
-      const ProjectedFantasyPoints = data[0].FantasyPoints;
+      const fantasyPoints = data[0].FantasyPoints;
 
       const playerData = {
         playerName,
         playerId,
         playerTeam,
         playerPosition,
-        LastGameFantasyPoints,
-        ProjectedFantasyPoints,
+        fantasyPoints,
       };
 
       console.log(playerData);
