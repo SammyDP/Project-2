@@ -47,11 +47,11 @@ You and your group will use everything you’ve learned over the past six module
 
 - &#x2611; Have a folder structure that meets the MVC paradigm.
 
-- &#x2612; Include authentication (express-session and cookies).
+- &#x2611; Include authentication (express-session and cookies).
 
-- &#x2612; Protect API keys and sensitive information with environment variables.
+- &#x2611; Protect API keys and sensitive information with environment variables.
 
-- &#x2612; Be deployed using Heroku (with data).
+- &#x2611; Be deployed using Heroku (with data).
 
 - &#x2611; Have a polished UI.
 
