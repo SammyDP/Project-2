@@ -15,9 +15,32 @@ const loginFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      document.location.replace("/");
+      document.location.replace("/profile");
     } else {
       alert("Failed to log in");
+    }
+  }
+};
+
+const createProfileHandler = async (event) => {
+  event.preventDefault();
+
+  // Gather email and password inputs
+  const email = document.querySelector("#email-signup").value.trim();
+  const password = document.querySelector("#password-signup").value.trim();
+
+  if (email && password) {
+    // Send post request to create a new user
+    const response = await fetch("/api/users", {
+      method: "POST",
+      body: JSON.stringify({ email, password }),
+      headers: { "Content-Type": "application/json" },
+    });
+
+    if (response.ok) {
+      document.location.replace("/createTeam");
+    } else {
+      alert("Failed to sign up");
     }
   }
 };
@@ -25,3 +48,7 @@ const loginFormHandler = async (event) => {
 document
   .querySelector(".login-form")
   .addEventListener("submit", loginFormHandler);
+
+document
+  .querySelector(".signup-form")
+  .addEventListener("submit", createProfileHandler);

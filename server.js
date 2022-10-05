@@ -67,15 +67,15 @@ function projectedStats(season, week) {
       return response.json();
     })
     .then((data) => {
-      const playerName = data[0].Name;
       const playerId = data[0].PlayerID;
+      const playerName = data[0].Name;
       const playerTeam = data[0].Team;
       const playerPosition = data[0].Position;
       const fantasyPoints = data[0].FantasyPoints;
 
       const playerData = {
-        playerName,
         playerId,
+        playerName,
         playerTeam,
         playerPosition,
         fantasyPoints,
