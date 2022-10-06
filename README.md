@@ -43,7 +43,7 @@ You and your group will use everything you’ve learned over the past six module
 
 - &#x2611; Have both GET and POST routes for retrieving and adding new data.
 
-- &#x2612; Use at least one new library, package, or technology that we haven’t discussed.
+- &#x2611; Use at least one new library, package, or technology that we haven’t discussed.
 
 - &#x2611; Have a folder structure that meets the MVC paradigm.
 
@@ -53,7 +53,7 @@ You and your group will use everything you’ve learned over the past six module
 
 - &#x2611; Be deployed using Heroku (with data).
 
-- &#x2612; Have a polished UI.
+- &#x2611; Have a polished UI.
 
 - &#x2612; Be responsive.
 
