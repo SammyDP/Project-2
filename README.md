@@ -67,18 +67,61 @@ You and your group will use everything you’ve learned over the past six module
 
 # Description
 
+<h3 align="center">
+Welcome to OnlyFantasies! An app that is the perfect companion to use for fantasy football to help give you an edge in your fantasy football league.
+</h3>
+<p>&nbsp;</p>
+
 <p align="center">
-
 <img src="https://user-images.githubusercontent.com/107449948/194374888-b649d18f-37d6-465c-8711-548af88ee7cb.png">
-
 </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
+<h3 align="center">
+First create an account to login, so that you can make a team and add players from your fantasy football league. When you visit next time, all you have to do is login with the same email/password when you created your account.
+</h3>
+<p>&nbsp;</p>
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/107449948/194380725-abc6858c-f47a-402d-a055-d3adf0ad495f.png">
+</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<h3 align="center">
+Once you have created an account and logged in, you can now create a team.
+</h3>
+<p>&nbsp;</p>
+
+<p align="center">
+<img src="">
+</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<h3 align="center">
+Then you can search and add players from your fantasy football league to your newly created team. 
+</h3>
+<p>&nbsp;</p>
+
+<p align="center">
+<img src="">
+</p>
+<p>&nbsp;</p>
 <p>&nbsp;</p>
 
 # Technology
 
-<img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"> <img src="https://user-images.githubusercontent.com/107449948/182315151-08c6a8cb-9059-4929-9f23-8c04075ef5c2.png" width="128" height="24"> <img src="https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white"> <img src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB"> <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white"> <img src="https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white"> <img src="https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white"> <img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white">
+<img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"> <img src="https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white"> <img src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB"> <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white"> <img src="https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white"> <img src="https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white"> <img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white">
 
+<p>&nbsp;</p>
+
+<img src="https://user-images.githubusercontent.com/107449948/182315151-08c6a8cb-9059-4929-9f23-8c04075ef5c2.png" width="128" height="24">
+<p>&nbsp;</p>
+<p align="center">
+Bulma is a free, open source framework that provides ready-to-use frontend components that you can easily combine to build responsive web interfaces.
+</p>
 <p>&nbsp;</p>
 
 # Links
