@@ -3,6 +3,7 @@ const express = require("express");
 const session = require("express-session");
 const handlebars = require("express-handlebars");
 const routes = require("./controllers");
+const mysql = require("mysql2");
 
 const sequelize = require("./config/connection");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
@@ -80,20 +81,6 @@ function projectedStats(season, week) {
         playerPosition,
         fantasyPoints,
       };
-
       console.log(playerData);
-
-      fetch("/api/players", {
-        method: "POST",
-        body: JSON.stringify(playerData),
-        headers: { "Content-Type": "application/json" },
-      })
-        .then((response) => response.json())
-        .then((data) => {
-          console.log("Success:", data);
-        })
-        .catch((error) => {
-          console.error("Error:", error);
-        });
     });
 }
