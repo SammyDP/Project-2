@@ -67,6 +67,12 @@ You and your group will use everything you’ve learned over the past six module
 
 # Description
 
+<p align="center">
+
+<img src="https://user-images.githubusercontent.com/107449948/194374888-b649d18f-37d6-465c-8711-548af88ee7cb.png">
+
+</p>
+
 <p>&nbsp;</p>
 
 # Technology
