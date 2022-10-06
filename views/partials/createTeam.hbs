@@ -1,4 +1,57 @@
-<label class="label">Search Players</label>
-<input class="input is-large field" type="text" placeholder="Last, First" />
-<button class="button is-large is-primary">Search</button>
-{{! Here we use the API data to list the searched players Name and stats that we want (most relevant) }}
+<div class="field">
+  <label class="label">Name Your Team</label>
+  <p class="control has-icons-left has-icons-right">
+    <input
+      class="input is-large"
+      type="text"
+      placeholder="Team Name"
+      id="team-name"
+    />
+    <span class="icon is-small is-left">
+      <i class="fas fa-users"></i>
+    </span>
+    <span class="icon is-small is-right">
+      <i class="fas fa-check"></i>
+    </span>
+  </p>
+</div>
+<div class="field">
+  <p class="control">
+    <button class="button is-success is-large">Create</button>
+  </p>
+</div>
+
+<div class="field">
+  <label class="label">Player Search</label>
+  <p class="control has-icons-left has-icons-right">
+    <input
+      class="input is-large"
+      type="text"
+      placeholder="Last Name, First"
+      id="player-name"
+    />
+    <span class="icon is-small is-left">
+      <i class="fas fa-user"></i>
+    </span>
+    <span class="icon is-small is-right">
+      <i class="fas fa-check"></i>
+    </span>
+  </p>
+</div>
+<div class="field">
+  <p class="control">
+    <button class="button is-success is-large">
+      Add Player
+    </button>
+  </p>
+</div>
+
+{{! Card to display the players that have been added to the team}}
+<div class="container">
+       {{>Team}}
+      </div>
+
+{{!-- Card to display the searched players name and stats --}}
+<div class="container">
+       {{>playerStats}}
+      </div>
