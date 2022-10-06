@@ -1,18 +1,22 @@
 {{! Card that populates with the User's Team }}
-  <div class="team card field">
-<ul class="player">
-  {{#each Player}}
-      <label for="Name">
+<div class="team-card">
+  <div class="team-card-header">
+    {{team_name}}
+ </div>
+  <div class="card-body">
+    <p>
       Player Name:
-    <li>{{data.Name[0]}}<span><div class="field">
-  <p class="control">
-      <button class="button is-danger is-outlined">
+      {{name}}
+    <div class="field">
+      <button class="control button is-danger is-outlined">
     <span>Delete</span>
     <span class="icon is-small">
       <i class="fas fa-times"></i>
     </span>
-  </button>
-    </li>
+    </button>
   </p>
+</div>
+<p>
+</div>
 </div>
 </span>
