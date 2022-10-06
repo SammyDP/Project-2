@@ -27,6 +27,7 @@
     <option value="14">Week 14</option>
   </select>
 </div>
+{{!-- // If we get rid of this button will it auto populate with the top value in the select menu? --}}
 <div class="field is-grouped">
   <div class="control">
     <button class="button is-link">Submit</button>
@@ -37,8 +38,9 @@
        {{>Team}}
       </div>
 
-      {{!-- Card will populate with your players stats --}}
+{{!-- Card will populate with your players stats --}}
         <div class="container">
+          {{#each playerStatss as |playerStats|}}
          {{>playerStats}}
         </div>
 
