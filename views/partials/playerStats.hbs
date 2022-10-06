@@ -1,22 +1,16 @@
-{{!-- This should be a for loop to populate cards for each player we a user has on a team.  Maybe a heading for each team a user has and then a card for each player and their weekly stats? see below--}}
-
-  <div class="player-stats-card">
+<div class="player-stats-card">
 <ul class="player_list">
-  {{#each Player}}
       <label for="Name">
       Player Name:
-    <li>{{data.Name[0]}}</li>
-        <label for="Position">
-      Position:
-    <li>{{data.Position[0]}}</li>
+    <li>{{name}}</li>
         <label for="Team">
       Team:
-    <li>{{data.Team[0]}}</li>
+    <li>{{team}}</li>
+        <label for="Position">
+      Position:
+    <li>{{position}}</li>
         <label for="LastGameFantasyPoints">
       Last Game Fantasy Points:
-    <li>{{data.LastGameFantasyPoints[0]}}</li>
-        <label for="ProjectedFantasyPoints">
-      Projected Fantasy Points:
-    <li>{{data.ProjectedFantasyPoints[0]}}</li>
-  {{/each}}
+    <li>{{fantasy_points}}</li>
 </ul>
+</div>
