@@ -9,7 +9,7 @@ const SequelizeStore = require("connect-session-sequelize")(session.Store);
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-
+const hbs = handlebars.create({});
 const sess = {
   secret: "Super secret secret",
   cookie: {
@@ -27,17 +27,17 @@ const sess = {
 
 app.use(session(sess));
 
-app.set("view engine", "hbs");
-
-app.engine(
-  "hbs",
-  handlebars({
-    layoutsDir: `${__dirname}/views/layouts`,
-    extname: "hbs",
-    defaultLayout: "index",
-    partialsDir: `${__dirname}/views/partials`,
-  })
-);
+// app.engine(
+//   "hbs",
+//   handlebars({
+//     layoutsDir: `${__dirname}/views/layouts`,
+//     extname: "hbs",
+//     defaultLayout: "index",
+//     partialsDir: `${__dirname}/views/partials`,
+//   })
+// );
+app.engine("handlebars", hbs.engine);
+app.set("view engine", "handlebars");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -48,7 +48,8 @@ app.use(routes);
 
 //Sets a basic route
 app.get("/", (req, res) => {
-  res.render("main", { layout: "index" });
+  console.log("hello");
+  res.render("dashboard");
 
   //Makes the app listen to port 3000
 });

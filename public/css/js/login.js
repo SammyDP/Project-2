@@ -21,7 +21,7 @@ const loginFormHandler = async (event) => {
   }
 };
 
-const createProfileHandler = async (event) => {
+let createProfileHandler = async (event) => {
   event.preventDefault();
 
   // Gather email and password inputs
@@ -34,18 +34,18 @@ const createProfileHandler = async (event) => {
       method: "POST",
       body: JSON.stringify({ email, password }),
       headers: { "Content-Type": "application/json" },
+    }).then((response) => {
+      if (response.ok) {
+        document.location.replace("/createTeam");
+      } else {
+        alert("Failed to sign up");
+      }
     });
-
-    if (response.ok) {
-      document.location.replace("/createTeam");
-    } else {
-      alert("Failed to sign up");
-    }
   }
 };
 
-document.querySelector("#login").addEventListener("submit", loginFormHandler);
-
 document
-  .querySelector(".signup-form")
-  .addEventListener("#create-account", createProfileHandler);
+  .querySelector("#create-account")
+  .addEventListener("click", createProfileHandler);
+
+document.querySelector("#log-in").addEventListener("click", loginFormHandler);
