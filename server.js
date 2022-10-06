@@ -58,8 +58,8 @@ sequelize.sync({ force: false }).then(() => {
 
 // Fetch API data and save to database
 function projectedStats(season, week) {
-  let season = "2022REG";
-  let week = 5;
+  // let season = "2022REG";
+  // let week = 5;
   var requestUrl = `https://api.sportsdata.io/v3/nfl/projections/json/PlayerGameProjectionStatsByWeek/${season}/${week}?key=${process.env.SPORTS_DATA_API_KEY}`;
 
   fetch(requestUrl)
