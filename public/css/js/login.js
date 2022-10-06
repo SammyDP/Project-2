@@ -25,8 +25,8 @@ const createProfileHandler = async (event) => {
   event.preventDefault();
 
   // Gather email and password inputs
-  const email = document.querySelector("#email-signup").value.trim();
-  const password = document.querySelector("#password-signup").value.trim();
+  const email = document.querySelector("#new-email").value.trim();
+  const password = document.querySelector("#new-password").value.trim();
 
   if (email && password) {
     // Send post request to create a new user
@@ -44,10 +44,8 @@ const createProfileHandler = async (event) => {
   }
 };
 
-document
-  .querySelector(".login-form")
-  .addEventListener("submit", loginFormHandler);
+document.querySelector("#login").addEventListener("submit", loginFormHandler);
 
 document
   .querySelector(".signup-form")
-  .addEventListener("submit", createProfileHandler);
+  .addEventListener("#create-account", createProfileHandler);

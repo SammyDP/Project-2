@@ -52,7 +52,7 @@ app.get("/", (req, res) => {
 
   //Makes the app listen to port 3000
 });
-sequelize.sync({ force: false }).then(() => {
+sequelize.sync({ force: true }).then(() => {
   app.listen(PORT, () => console.log("Now listening"));
 });
 
@@ -81,18 +81,5 @@ function projectedStats(season, week) {
         fantasyPoints,
       };
       console.log(playerData);
-    });
-
-  fetch("/api/players", {
-    method: "POST",
-    body: JSON.stringify(playerData),
-    headers: { "Content-Type": "application/json" },
-  })
-    .then((response) => response.json())
-    .then((data) => {
-      console.log("Success:", data);
-    })
-    .catch((error) => {
-      console.error("Error:", error);
     });
 }
